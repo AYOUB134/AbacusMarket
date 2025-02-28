@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Noto Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', serif; /* Use Noto Serif as the primary font
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+
+    background-color: #0d1b2a;
+  
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Serif', serif; /* Use Noto Serif for headings */
+}
