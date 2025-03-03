@@ -1,27 +1,41 @@
-import Navbar from "../../common/Navbar";
-import Header from "../../common/Header";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import Breadcrumb from "../../common/Breadcrumb";
-import DateTime from "../../common/DateTime";
-import Sidebar2 from "../../common/Sidebar2";
-import  LoginData from './LoginData'
+import LoginData from "./LoginData";
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate("/");
+  };
+
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100" style={{ backgroundColor: '#0d1b2a' }}>
-      {/* <Header /> */}
-      {/* <Navbar /> */}
-      <div className="">
-        {/* <Sidebar2 className="w-2/4" /> */}
-        <main className="flex-grow rounded-lg shadow-md">
-          <div className="">
-            <LoginData></LoginData>
+    <div
+      className="min-h-screen flex flex-col "
+      style={{ backgroundColor: "" }}
+    >
+      {/* Header with Logo */}
+      <div className="text-center py-4">
+        <span
+          className="text-2xl font-bold text-white cursor-pointer"
+          onClick={handleLogoClick}
+        >
+          MEGA MARKET
+        </span>
+      </div>
+
+      <div className="flex flex-grow items-center justify-center">
+        <main className="flex-grow rounded-lg shadow-md w-full max-w-md">
+          <div>
+            <LoginData />
           </div>
         </main>
       </div>
+
       <footer className="bg-white border-t border-gray-200 py-4">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Breadcrumb />
-          {/* <DateTime /> */}
         </div>
       </footer>
     </div>

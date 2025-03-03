@@ -3,15 +3,30 @@ import Header from "../../common/Header";
 import Breadcrumb from "../../common/Breadcrumb";
 import DateTime from "../../common/DateTime";
 import Sidebar2 from "../../common/Sidebar2";
-import  Notificationsdata from './Notificationsdata'
+import Notificationsdata from "./Notificationsdata";
+import { useState } from "react";
 
 const Notifications = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100" style={{ backgroundColor: '#0d1b2a' }}>
-      <Header />
-      <Navbar />
+    <div
+      className="min-h-screen flex flex-col bg-gray-100"
+      style={{ backgroundColor: "#0d1b2a" }}
+    >
+      <div className="sticky top-0 z-10">
+        <Header />
+        <Navbar />
+      </div>
       <div className="flex flex-grow container mx-auto py-0">
-        <Sidebar2 className="w-2/4" />
+        <Sidebar2
+          isOpen={isSidebarOpen}
+          toggleSidebar={toggleSidebar}
+          className="w-2/4"
+        />
         <main className="flex-grow rounded-lg shadow-md">
           <div className="">
             <Notificationsdata></Notificationsdata>

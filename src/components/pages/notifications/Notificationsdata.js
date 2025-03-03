@@ -18,7 +18,7 @@ const Notifications = () => {
   return (
     <div className="bg-[#0f1d2b] min-h-screen p-4 text-white">
       {/* Header */}
-      <div className="bg-yellow-500 text-black text-center py-3 text-xl font-bold rounded">
+      <div className="bg-blue-100 text-black text-center py-3 text-xl font-bold rounded">
         <FaBell className="inline-block mr-2" /> Notifications
       </div>
 

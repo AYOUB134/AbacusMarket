@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react";
 import Navbar from "../../common/Navbar";
 import Header from "../../common/Header";
 import Breadcrumb from "../../common/Breadcrumb";
@@ -7,12 +7,26 @@ import Sidebar from "../../common/Sidebar2";
 import ManageWallet from "./ManageWallet";
 
 const Wallet = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100" style={{ backgroundColor: '#0d1b2a' }}>
-      <Header />
-      <Navbar />
+    <div
+      className="min-h-screen flex flex-col bg-gray-100"
+      style={{ backgroundColor: "#0d1b2a" }}
+    >
+      <div className="sticky top-0 z-10">
+        <Header />
+        <Navbar />
+      </div>
       <div className="flex flex-grow container mx-auto">
-        <Sidebar className="w-full lg:w-1/4" />
+        <Sidebar
+          isOpen={isSidebarOpen}
+          toggleSidebar={toggleSidebar}
+          className="w-full lg:w-1/4"
+        />
         <main className="flex-grow rounded-lg shadow-md w-full lg:w-2/4">
           <div>
             <ManageWallet />

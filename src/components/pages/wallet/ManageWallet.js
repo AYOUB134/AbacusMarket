@@ -1,39 +1,47 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { FaWallet } from "react-icons/fa";
 
 const ManageWallet = () => {
-  const [balance, setBalance] = useState(0.00);
+  const [balance, setBalance] = useState(0.0);
   const [transactions, setTransactions] = useState([]); // Mock data can be added here
 
   const handleDeposit = () => {
     // Implement deposit functionality here
-    console.log('Deposit clicked');
+    console.log("Deposit clicked");
   };
 
   const handleWithdraw = () => {
     // Implement withdraw functionality here
-    console.log('Withdraw clicked');
+    console.log("Withdraw clicked");
   };
 
   return (
     <div className="p-4 bg-[#0d1b2a] min-h-screen text-white">
       {/* Header */}
-      <div className="bg-yellow-500 text-black font-bold flex items-center p-2 rounded-md">
+      <div className="bg-blue-100 text-black font-bold flex items-center p-2 rounded-md">
         <FaWallet className="mr-2" />
         WALLET / BALANCE
       </div>
 
       {/* Description */}
       <div className="bg-yellow-400 text-black text-sm p-2 mt-2 rounded-md">
-        Here, you can view your wallet and balance details. You can manage your funds by depositing or withdrawing money. All transactions are recorded and displayed below.
+        Here, you can view your wallet and balance details. You can manage your
+        funds by depositing or withdrawing money. All transactions are recorded
+        and displayed below.
       </div>
 
       {/* Wallet Actions */}
       <div className="flex flex-wrap gap-2 mt-4">
-        <div className="border border-blue-400 text-white px-3 py-1 rounded-md cursor-pointer hover:bg-[#004054]" onClick={handleDeposit}>
+        <div
+          className="border border-blue-400 text-white px-3 py-1 rounded-md cursor-pointer hover:bg-[#004054]"
+          onClick={handleDeposit}
+        >
           Deposit
         </div>
-        <div className="border border-blue-400 text-white px-3 py-1 rounded-md cursor-pointer hover:bg-[#004054]" onClick={handleWithdraw}>
+        <div
+          className="border border-blue-400 text-white px-3 py-1 rounded-md cursor-pointer hover:bg-[#004054]"
+          onClick={handleWithdraw}
+        >
           Withdraw
         </div>
       </div>
@@ -50,14 +58,17 @@ const ManageWallet = () => {
       <div className="bg-[#002733] p-4 mt-4 rounded-md">
         <div className="text-sm font-bold mb-2">Transaction History</div>
         {transactions.length === 0 ? (
-          <div className="bg-yellow-500 text-black text-center font-bold mt-4 p-2 rounded-md">
+          <div className="bg-blue-100 text-black text-center font-bold mt-4 p-2 rounded-md">
             NO TRANSACTIONS FOUND
           </div>
         ) : (
           <div className="mt-4">
             {/* Map through transactions and display them */}
             {transactions.map((transaction, index) => (
-              <div key={index} className="p-2 bg-[#004054] text-white mb-2 rounded-md">
+              <div
+                key={index}
+                className="p-2 bg-[#004054] text-white mb-2 rounded-md"
+              >
                 {/* Transaction details can be displayed here */}
                 <p>Transaction {index + 1}</p>
               </div>

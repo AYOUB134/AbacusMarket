@@ -1,27 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const VerifyUrl = () => {
-  const [url, setUrl] = useState('');
-  const [verificationResult, setVerificationResult] = useState('');
+  const [url, setUrl] = useState("");
+  const [verificationResult, setVerificationResult] = useState("");
 
   const handleVerifyUrl = () => {
     // Implement URL verification logic here
-    console.log('URL to verify:', url);
+    console.log("URL to verify:", url);
     // For demonstration purposes, we will just set a mock result
-    setVerificationResult('This URL is verified.');
+    setVerificationResult("This URL is verified.");
   };
 
   return (
-    <div className="bg-[#0f1d2b] mt-4 text-white flex items-center justify-center">
-      <div className="w-full max-w-md">
+    <div className="bg-[#0f1d2b] p-4 text-white flex items-center justify-center">
+      <div className="w-full max-w-md mx-auto">
         {/* Header */}
-        <div className="bg-yellow-500 text-black text-center py-3 text-xl font-bold rounded">
+        <div className="bg-blue-100 text-black text-center py-3 text-xl font-bold rounded">
           Verify URL
         </div>
 
         {/* Description */}
         <div className="bg-yellow-400 text-black text-sm p-2 mt-4 rounded-md">
-          This tool is to verify the legitimacy of any fixed link of Abacus Market like the main public link or your private links. Temporal rotatory links cannot be verified here. Links provided by Rotator.to, Kangaroo Kicks Links or other authorized link distributors are always provided to you using signed PGP messages that you MUST verify MANUALLY, do not rely only on this tool. Remember that proxy phishing sites can alter the answer of this tool!
+          This tool is to verify the legitimacy of any fixed link of Abacus
+          Market like the main public link or your private links. Temporal
+          rotatory links cannot be verified here. Links provided by Rotator.to,
+          Kangaroo Kicks Links or other authorized link distributors are always
+          provided to you using signed PGP messages that you MUST verify
+          MANUALLY, do not rely only on this tool. Remember that proxy phishing
+          sites can alter the answer of this tool!
         </div>
 
         {/* URL Input */}
@@ -38,7 +44,7 @@ const VerifyUrl = () => {
         {/* Verify Button */}
         <div className="text-center mt-4">
           <button
-            className="bg-yellow-500 text-black px-4 py-2 rounded mt-2"
+            className="bg-blue-100 text-black px-4 py-2 rounded mt-2 w-full"
             onClick={handleVerifyUrl}
           >
             Verify Url

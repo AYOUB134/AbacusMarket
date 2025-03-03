@@ -1,50 +1,69 @@
-import React from 'react';
 import { Link } from "react-router-dom";
-import { FaHome, FaShoppingCart, FaEnvelope, FaWallet, FaUser, FaLifeRing, FaStore, FaLink, FaHeartbeat, FaMoon, FaBell } from 'react-icons/fa'; // Importing icons
+import {
+  FaHome,
+  FaShoppingCart,
+  FaEnvelope,
+  FaWallet,
+  FaUser,
+  FaLifeRing,
+  FaStore,
+  FaLink,
+  FaHeartbeat,
+} from "react-icons/fa";
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
+  const navItems = [
+    { to: "/", icon: FaHome, text: "Home" },
+    { to: "/orders", icon: FaShoppingCart, text: "Orders (0)" },
+    { to: "/messages", icon: FaEnvelope, text: "Messages (0)" },
+    { to: "/balance", icon: FaWallet, text: "Wallets" },
+    { to: "/editprofile", icon: FaUser, text: "Profile" },
+    { to: "/support", icon: FaLifeRing, text: "Support (0)" },
+    { to: "/become-vendor", icon: FaStore, text: "Become a Vendor" },
+    { to: "/url-verification", icon: FaLink, text: "URL Verification" },
+    { to: "/harm-reduction", icon: FaHeartbeat, text: "Harm Reduction" },
+  ];
+
   return (
-    <nav className={`py-4 ${darkMode ? 'bg-gray-900' : 'bg-blue-900'}`}>
-      <div className="container mx-auto px-4 flex justify-between items-center">
-        <div className="flex-shrink-0">
-       
+    <nav
+      className={`py-4 sticky top-0 ${
+        darkMode ? "bg-gray-900" : "bg-[#0D1B2A]"
+      }`}
+    >
+      <div className="container mx-auto px-4 flex flex-wrap justify-between items-center">
+        {/* Mobile Menu */}
+
+        <div className="lg:hidden scrollbar-hide flex overflow-x-auto space-x-4 pb-2">
+          {navItems.map((item) => (
+            <Link
+              key={item.to}
+              to={item.to}
+              className={`flex items-center flex-shrink-0 ${
+                darkMode
+                  ? "text-gray-300 hover:text-gray-500"
+                  : "text-white hover:text-blue-200"
+              }`}
+            >
+              <item.icon className="mr-1" /> {item.text}
+            </Link>
+          ))}
         </div>
-        <div className="hidden md:flex space-x-4">
-          <Link to="/" className={`flex items-center ${darkMode ? 'text-gray-300 hover:text-gray-500' : 'text-white hover:text-blue-200'}`}>
-            <FaHome className="mr-1" /> Home
-          </Link>
-          <Link to="/orders" className={`flex items-center ${darkMode ? 'text-gray-300 hover:text-gray-500' : 'text-white hover:text-blue-200'}`}>
-            <FaShoppingCart className="mr-1" /> Orders (0)
-          </Link>
-          <Link to="/messages" className={`flex items-center ${darkMode ? 'text-gray-300 hover:text-gray-500' : 'text-white hover:text-blue-200'}`}>
-            <FaEnvelope className="mr-1" /> Messages (0)
-          </Link>
-          <Link to="/balance" className={`flex items-center ${darkMode ? 'text-gray-300 hover:text-gray-500' : 'text-white hover:text-blue-200'}`}>
-            <FaWallet className="mr-1" /> Wallets
-          </Link>
-          <Link to="/editprofile" className={`flex items-center ${darkMode ? 'text-gray-300 hover:text-gray-500' : 'text-white hover:text-blue-200'}`}>
-            <FaUser className="mr-1" /> Profile
-          </Link>
-          <Link to="/support" className={`flex items-center ${darkMode ? 'text-gray-300 hover:text-gray-500' : 'text-white hover:text-blue-200'}`}>
-            <FaLifeRing className="mr-1" /> Support (0)
-          </Link>
-          <Link to="/become-vendor" className={`flex items-center ${darkMode ? 'text-gray-300 hover:text-gray-500' : 'text-white hover:text-blue-200'}`}>
-            <FaStore className="mr-1" /> Become a Vendor
-          </Link>
-          <Link to="/url-verification" className={`flex items-center ${darkMode ? 'text-gray-300 hover:text-gray-500' : 'text-white hover:text-blue-200'}`}>
-            <FaLink className="mr-1" /> URL Verification
-          </Link>
-          <Link to="/harm-reduction" className={`flex items-center ${darkMode ? 'text-gray-300 hover:text-gray-500' : 'text-white hover:text-blue-200'}`}>
-            <FaHeartbeat className="mr-1" /> Harm Reduction
-          </Link>
-        </div>
-        <div className="flex items-center space-x-4">
-          <button className={`focus:outline-none ${darkMode ? 'text-gray-300' : 'text-white'}`} onClick={toggleDarkMode}>
-            <FaMoon className="w-6 h-6" />
-          </button>
-          <Link to="/notifications" className={`flex items-center ${darkMode ? 'text-gray-300 hover:text-gray-500' : 'text-white hover:text-blue-200'}`}>
-            <FaBell className="w-6 h-6" />
-          </Link>
+
+        {/* Desktop Menu */}
+        <div className="hidden lg:flex flex-wrap items-center space-x-4">
+          {navItems.map((item) => (
+            <Link
+              key={item.to}
+              to={item.to}
+              className={`flex items-center ${
+                darkMode
+                  ? "text-gray-300 hover:text-gray-500"
+                  : "text-white hover:text-blue-200"
+              }`}
+            >
+              <item.icon className="mr-1" /> {item.text}
+            </Link>
+          ))}
         </div>
       </div>
     </nav>
