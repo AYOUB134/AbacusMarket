@@ -17,7 +17,7 @@ const Sidebar = ({ darkMode = false, toggleDarkMode = () => {} }) => {
     <>
       {/* Mobile Toggle Button */}
       <button
-        className="md:hidden fixed top-4 right-4 z-50 text-white rounded "
+        className="md:hidden fixed top-4 right-4 z-50 text-black rounded mt-5 "
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
