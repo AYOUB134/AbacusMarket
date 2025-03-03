@@ -9,8 +9,8 @@ import FeaturedListings from "./FeaturedListings";
 const Home = () => {
   return (
     <div
-      className="min-h-screen flex flex-col bg-gray-100"
-      style={{ backgroundColor: "#0d1b2a" }}
+      className="min-h-screen flex flex-col bg-white"
+      style={{ backgroundColor: "" }}
     >
       <div className="sticky top-0 z-10">
         <Header />

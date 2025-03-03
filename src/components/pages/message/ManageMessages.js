@@ -13,15 +13,15 @@ const ManageMessages = () => {
   };
 
   return (
-    <div className="p-4 bg-[#0d1b2a] min-h-screen text-white">
+    <div className="p-4 bg-[] min-h-screen text-white">
       {/* Header */}
-      <div className="bg-blue-100 text-black font-bold flex items-center p-2 rounded-md">
+      <div className="bg-[#084d71] text-white font-bold flex items-center p-2 rounded-md">
         <FaEnvelope className="mr-2" />
         PRIVATE MESSAGES
       </div>
 
       {/* Description */}
-      <div className="bg-yellow-400 text-black text-sm p-2 mt-2 rounded-md">
+      <div className=" text-black text-sm p-2 mt-2 rounded-md">
         Here, you can view your private messages. You can see your incoming and
         outgoing messages, as well as your trash bin in which messages will be
         deleted automatically after 30 days. Your conversations are never
@@ -38,7 +38,7 @@ const ManageMessages = () => {
       </div>
 
       {/* Message Status Tabs */}
-      <div className="flex flex-wrap gap-2 mt-4">
+      <div className="flex flex-wrap gap-2 mt-4 bg-[#084d71] text-white">
         {["CONVERSATIONS (0)", "ORDERS (0)", "TRASH", "INVITATIONS (0)"].map(
           (tab, index) => (
             <div
@@ -52,8 +52,8 @@ const ManageMessages = () => {
       </div>
 
       {/* Search Bar */}
-      <div className="bg-[#002733] p-4 mt-4 rounded-md">
-        <div className="flex flex-col lg:flex-row items-center space-y-2 lg:space-y-0 lg:space-x-2">
+      <div className="bg-[#084d71] text-white p-4 mt-4 rounded-md">
+        <div className="flex flex-col lg:flex-row items-center space-y-2 lg:space-y-0 lg:space-x-2 ">
           <label className="text-white">Search:</label>
           <input
             type="text"
@@ -76,7 +76,7 @@ const ManageMessages = () => {
             <option value="Unpaid">Unpaid</option>
           </select>
           <button
-            className="bg-blue-600 px-3 py-1 rounded-md hover:bg-blue-800"
+            className="bg-[#084d71] text-white px-3 py-1 rounded-md "
             onClick={handleSearch}
           >
             Search
@@ -85,7 +85,7 @@ const ManageMessages = () => {
 
         {/* No Messages Found */}
         {messages.length === 0 ? (
-          <div className="bg-blue-100 text-black text-center font-bold mt-4 p-2 rounded-md">
+          <div className="bg-[#084d71] text-white text-center font-bold mt-4 p-2 rounded-md">
             NO MESSAGES FOUND
           </div>
         ) : (

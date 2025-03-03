@@ -2,14 +2,14 @@ import React from 'react';
 
 const HarmReduction = () => {
   return (
-    <div className="bg-[#0f1d2b] min-h-screen p-4 text-white">
+    <div className=" min-h-screen p-4 ">
       {/* Header */}
-      <div className="bg-blue-100 text-black text-center py-3 text-xl font-bold rounded">
+      <div className="bg-[#084d71] text-white text-center py-3 text-xl font-bold rounded">
         Harm Reduction
       </div>
 
       {/* Description */}
-      <div className="bg-yellow-400 text-black text-sm p-2 mt-4 rounded-md">
+      <div className="text-black text-sm p-2 mt-4 rounded-md">
         Harm reduction is a set of practical strategies and ideas aimed at reducing negative consequences associated with drug use. It is also a movement for social justice built on a belief in, and respect for, the rights of people who use drugs.
       </div>
 
@@ -29,7 +29,7 @@ const HarmReduction = () => {
             "Tip 9: Seek professional help if you feel your drug use is out of control.",
             "Tip 10: Respect the choices of others and promote safe practices.",
           ].map((tip, index) => (
-            <div key={index} className="bg-[#15232f] p-3 mb-2 rounded-md border border-gray-600">
+            <div key={index} className=" p-3 mb-2 rounded-md border border-gray-600">
               {tip}
             </div>
           ))}
@@ -47,7 +47,7 @@ const HarmReduction = () => {
             "Resource 4: Harm Reduction International",
             "Resource 5: Local harm reduction services and organizations",
           ].map((resource, index) => (
-            <div key={index} className="bg-[#15232f] p-3 mb-2 rounded-md border border-gray-600">
+            <div key={index} className=" p-3 mb-2 rounded-md border border-gray-600">
               {resource}
             </div>
           ))}

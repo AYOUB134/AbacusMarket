@@ -12,7 +12,7 @@ const Sidebar2 = ({ isOpen, toggleSidebar }) => {
     <aside className="">
       {/* Toggle Button for Mobile */}
       <button
-        className="md:hidden fixed top-4 right-4 text-white z-30"
+        className="md:hidden fixed top-4 right-4 text-white "
         onClick={toggleSidebar}
       >
         {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -20,13 +20,13 @@ const Sidebar2 = ({ isOpen, toggleSidebar }) => {
 
       {/* Sidebar */}
       <div
-        className={`fixed inset-y-0 left-0 w-72 bg-gray-900 text-white p-4 min-h-screen transform transition-transform duration-300 z-30 ${
+        className={`fixed inset-y-0 left-0 w-72  p-4 min-h-screen transform transition-transform duration-300 z-30 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0 md:static md:w-72`}
       >
         {/* Profile Actions */}
         <div className="p-2 rounded-md">
-          <div className="flex items-center bg-blue-100 text-black font-bold p-2 rounded-md">
+          <div className="flex items-center bg-[#084d71] text-white text-black font-bold p-2 rounded-md">
             <FaUser className="mr-2" />
             PROFILE ACTIONS
           </div>
@@ -94,7 +94,7 @@ const Sidebar2 = ({ isOpen, toggleSidebar }) => {
             <p className="ml-2">
               Euro (EUR): <span className="text-yellow-400">91,617.04</span>
             </p>
-            <button className="w-full mt-2 bg-[#004054] text-white py-1 rounded-md hover:bg-[#00333b]">
+            <button className="w-full mt-2  text-white py-1 rounded-md hover:bg-[#00333b]">
               Deposits & Withdrawals (BTC)
             </button>
 

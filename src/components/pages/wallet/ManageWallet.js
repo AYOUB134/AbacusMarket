@@ -16,30 +16,30 @@ const ManageWallet = () => {
   };
 
   return (
-    <div className="p-4 bg-[#0d1b2a] min-h-screen text-white">
+    <div className="p-4 bg-[] min-h-screen text-white">
       {/* Header */}
-      <div className="bg-blue-100 text-black font-bold flex items-center p-2 rounded-md">
+      <div className="bg-[#084d71] text-white font-bold flex items-center p-2 rounded-md">
         <FaWallet className="mr-2" />
         WALLET / BALANCE
       </div>
 
       {/* Description */}
-      <div className="bg-yellow-400 text-black text-sm p-2 mt-2 rounded-md">
+      <div className=" text-black text-sm p-2 mt-2 rounded-md">
         Here, you can view your wallet and balance details. You can manage your
         funds by depositing or withdrawing money. All transactions are recorded
         and displayed below.
       </div>
 
       {/* Wallet Actions */}
-      <div className="flex flex-wrap gap-2 mt-4">
+      <div className="flex flex-wrap gap-2 mt-4text-white">
         <div
-          className="border border-blue-400 text-white px-3 py-1 rounded-md cursor-pointer hover:bg-[#004054]"
+          className="border border-blue-400 text-black px-3 py-1 rounded-md cursor-pointer hover:bg-[#004054]"
           onClick={handleDeposit}
         >
           Deposit
         </div>
         <div
-          className="border border-blue-400 text-white px-3 py-1 rounded-md cursor-pointer hover:bg-[#004054]"
+          className="border border-blue-400 text-black px-3 py-1 rounded-md cursor-pointer hover:bg-[#004054]"
           onClick={handleWithdraw}
         >
           Withdraw
@@ -47,7 +47,7 @@ const ManageWallet = () => {
       </div>
 
       {/* Balance */}
-      <div className="bg-[#002733] p-4 mt-4 rounded-md">
+      <div className="bg-[#084d71] text-white p-4 mt-4 rounded-md">
         <div className="text-sm">
           <p className="font-bold">Current Balance</p>
           <p className="ml-2 text-yellow-400">USD {balance.toFixed(2)}</p>
@@ -55,10 +55,10 @@ const ManageWallet = () => {
       </div>
 
       {/* Transaction History */}
-      <div className="bg-[#002733] p-4 mt-4 rounded-md">
+      <div className="bg-[#084d71] text-white p-4 mt-4 rounded-md">
         <div className="text-sm font-bold mb-2">Transaction History</div>
         {transactions.length === 0 ? (
-          <div className="bg-blue-100 text-black text-center font-bold mt-4 p-2 rounded-md">
+          <div className="bg-[#084d71] text-white text-center font-bold mt-4 p-2 rounded-md">
             NO TRANSACTIONS FOUND
           </div>
         ) : (

@@ -11,23 +11,26 @@ import Verify from "./components/pages/verifyurl/Verify";
 import HarmReduction from "./components/pages/HarmReduction/HarmReduction";
 import Notifications from "./components/pages/notifications/Notifications";
 import Login from "./components/pages/login/Login";
+
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/orders" element={<Order />} />
-        <Route path="/messages" element={<Message />} />
-        <Route path="/balance" element={<Wallet />} />
-        <Route path="/editprofile" element={<Profile />} />
-        <Route path="/support" element={<Support />} />
-        <Route path="/become-vendor" element={<Vendor />} />
-        <Route path="/url-verification" element={<Verify />} />
-        <Route path="/harm-reduction" element={<HarmReduction />} />
-        <Route path="/notifications" element={<Notifications />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </Router>
+    <div className="bg-white min-h-screen">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/orders" element={<Order />} />
+          <Route path="/messages" element={<Message />} />
+          <Route path="/balance" element={<Wallet />} />
+          <Route path="/editprofile" element={<Profile />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="/become-vendor" element={<Vendor />} />
+          <Route path="/url-verification" element={<Verify />} />
+          <Route path="/harm-reduction" element={<HarmReduction />} />
+          <Route path="/notifications" element={<Notifications />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </Router>
+    </div>
   );
 };
 

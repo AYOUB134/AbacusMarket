@@ -12,15 +12,15 @@ const VerifyUrl = () => {
   };
 
   return (
-    <div className="bg-[#0f1d2b] p-4 text-white flex items-center justify-center">
+    <div className="p-4  flex items-center justify-center">
       <div className="w-full max-w-md mx-auto">
         {/* Header */}
-        <div className="bg-blue-100 text-black text-center py-3 text-xl font-bold rounded">
+        <div className="bg-[#084d71] text-white text-center py-3 text-xl font-bold rounded">
           Verify URL
         </div>
 
         {/* Description */}
-        <div className="bg-yellow-400 text-black text-sm p-2 mt-4 rounded-md">
+        <div className="  text-black text-sm p-2 mt-4 rounded-md">
           This tool is to verify the legitimacy of any fixed link of Abacus
           Market like the main public link or your private links. Temporal
           rotatory links cannot be verified here. Links provided by Rotator.to,
@@ -32,7 +32,7 @@ const VerifyUrl = () => {
 
         {/* URL Input */}
         <div className="mt-6">
-          <label className="block text-sm font-bold mb-2">Url to Verify:</label>
+          <label className="  block text-sm font-bold mb-2">Url to Verify:</label>
           <input
             type="text"
             className="w-full p-2 rounded-md text-black"
@@ -44,7 +44,7 @@ const VerifyUrl = () => {
         {/* Verify Button */}
         <div className="text-center mt-4">
           <button
-            className="bg-blue-100 text-black px-4 py-2 rounded mt-2 w-full"
+            className="bg-[#084d71] text-white px-4 py-2 rounded mt-2 w-full"
             onClick={handleVerifyUrl}
           >
             Verify Url

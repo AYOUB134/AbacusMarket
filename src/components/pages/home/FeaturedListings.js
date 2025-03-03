@@ -12,9 +12,9 @@ const FeaturedListings = () => {
   }, []);
 
   return (
-    <div className="text-white flex-grow p-4">
+    <div className="text-white flex-grow p-4 bg-white">
       <h2
-        className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-yellow-400"
+        className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-[#084d71]"
         style={{ marginTop: "0" }}
       >
         ⭐ FEATURED LISTINGS
@@ -23,7 +23,7 @@ const FeaturedListings = () => {
         {listings.map((listing, index) => (
           <div
             key={listing.id}
-            className="bg-gray-30 p-3 sm:p-4 rounded-lg border border-gray-600 shadow-md flex flex-col justify-between"
+            className=" p-3 sm:p-4 rounded-lg border border-gray-600 shadow-md flex flex-col justify-between"
           >
             <div>
               {/* Product Image */}
@@ -31,13 +31,13 @@ const FeaturedListings = () => {
                 <img
                   src={listing.image}
                   alt={listing.title}
-                  className="w-full h-full object-contain p-2 bg-gray-100"
+                  className="w-full h-full object-contain p-2 "
                   loading="lazy"
                 />
               </div>
 
               {/* Product Title */}
-              <h3 className="text-xs sm:text-sm font-semibold text-yellow-400 mb-1 line-clamp-2">
+              <h3 className="text-xs sm:text-sm font-semibold text-black mb-1 line-clamp-2">
                 {listing.title}
               </h3>
 
@@ -48,7 +48,7 @@ const FeaturedListings = () => {
 
               {/* Seller Info */}
               <p className="text-xs text-gray-300 font-semibold mt-1">
-                <span className="text-yellow-400">Sold by:</span> Vendor{" "}
+                <span className="text-black">Sold by:</span> Vendor{" "}
                 {index + 1} ({Math.floor(Math.random() * 5000)})
               </p>
 
@@ -67,7 +67,7 @@ const FeaturedListings = () => {
                 USD {listing.price.toFixed(2)}
               </p>
               <p className="text-xs text-gray-300">
-                <span className="text-yellow-400 font-semibold">
+                <span className="text-black font-semibold">
                   Ships From:
                 </span>{" "}
                 United States
@@ -77,7 +77,7 @@ const FeaturedListings = () => {
             {/* View Product Button */}
             <Link
               to="#"
-              className="mt-2 sm:mt-3 block bg-blue-100 text-black text-xs sm:text-sm font-bold py-2 text-center rounded hover:bg-yellow-400 transition-colors"
+              className="mt-2 sm:mt-3 block  text-white text-xs sm:text-sm font-bold py-2 text-center rounded  transition-colors bg-[#084d71]"
             >
               View Product →
             </Link>

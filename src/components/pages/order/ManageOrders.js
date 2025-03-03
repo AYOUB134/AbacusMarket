@@ -13,15 +13,15 @@ const ManageOrders = () => {
   };
 
   return (
-    <div className="text-center  p-4 bg-[#0d1b2a] min-h-screen text-white">
+    <div className="text-center  p-4 bg-white min-h-screen ">
       {/* Header */}
-      <div className=" text-center  bg-blue-100 text-black font-bold flex items-center p-2 rounded-md">
+      <div className=" text-center  bg-[#084d71] text-white font-bold flex items-center p-2 rounded-md">
         <FaClipboardList className="mr-2" />
         ORDERS
       </div>
 
       {/* Description */}
-      <div className="bg-yellow-400 text-black text-sm p-2 mt-2 rounded-md">
+      <div className=" text-black text-sm p-2 mt-2 rounded-md">
         Here, you can view your order history. Your current orders are the
         orders that are not yet finalized, and the archived orders are the
         finalized orders where feedback has been left. Orders disappear from the
@@ -41,7 +41,7 @@ const ManageOrders = () => {
         ].map((tab, index) => (
           <div
             key={index}
-            className="border border-blue-400 text-white px-3 py-1 rounded-md cursor-pointer hover:bg-[#004054]"
+            className="border border-blue-400 text-white px-3 py-1 rounded-md cursor-pointer bg-[#084d71] text-white"
           >
             {tab}
           </div>
@@ -73,7 +73,7 @@ const ManageOrders = () => {
             <option value="Unpaid">Unpaid</option>
           </select>
           <button
-            className="bg-blue-600 px-3 py-1 rounded-md hover:bg-blue-800"
+            className="bg-[#084d71] text-white px-3 py-1 rounded-md hover:bg-blue-800"
             onClick={handleSearch}
           >
             Search
@@ -82,7 +82,7 @@ const ManageOrders = () => {
 
         {/* Display Orders */}
         {orders.length === 0 ? (
-          <div className="bg-blue-100 text-black text-center font-bold mt-4 p-2 rounded-md">
+          <div className="bg-[#084d71] text-white text-center font-bold mt-4 p-2 rounded-md">
             NO ORDERS FOUND
           </div>
         ) : (

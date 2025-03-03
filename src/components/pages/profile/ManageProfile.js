@@ -2,21 +2,21 @@ import React from "react";
 
 const ManageProfile = () => {
   return (
-    <div className="bg-[#0f1b26] text-white p-4 min-h-screen">
+    <div className=" p-4 min-h-screen">
       {/* Header Section */}
-      <div className="bg-blue-100 p-2 text-center text-xl font-bold text-black">
+      <div className="bg-[#084d71] text-white p-2 text-center text-xl font-bold ">
         DEVS360
       </div>
-      <div className="bg-blue-100 text-black font-bold text-center p-1 w-fit mx-auto mt-2 px-4 rounded-md">
+      <div className="bg-[#084d71] text-white font-bold text-center p-1 w-fit mx-auto mt-2 px-4 rounded-md">
         Buyer Profile
       </div>
 
       {/* Profile Card */}
-      <div className="bg-[#15232f] p-4 mt-4 rounded-lg border border-gray-600">
+      <div className="  bg-[#084d71] text-white p-4 mt-4 rounded-lg border border-gray-600">
         <div className="flex flex-col md:flex-row items-center gap-4">
-          <div className="w-16 h-16 bg-blue-100 rounded-lg"></div>
+          <div className="w-16 h-16 bg-[#084d71] text-white rounded-lg"></div>
           <div className="text-center md:text-left">
-            <span className="font-bold">devs360 (0)</span>
+            <span className="font-bold bg-[#084d71] text-white">devs360 (0)</span>
             <span className="ml-2 bg-green-500 text-white text-xs p-1 rounded">
               Trust Level 1
             </span>
@@ -28,11 +28,11 @@ const ManageProfile = () => {
       </div>
 
       {/* Ratings and Statistics Section */}
-      <div className="bg-[#15232f] p-4 mt-4 rounded-lg border border-gray-600">
+      <div className=" p-4 mt-4 rounded-lg border border-gray-600">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Buyer Feedback Ratings */}
           <div>
-            <div className="bg-blue-100 text-black font-bold p-2 rounded-md w-fit">
+            <div className="bg-[#084d71] text-white font-bold p-2 rounded-md w-fit">
               Buyer Feedback Ratings
             </div>
             <div className="bg-blue-100 text-black text-xs p-1 rounded-md w-fit mt-2">
@@ -71,7 +71,7 @@ const ManageProfile = () => {
           </div>
           {/* Global Statistics */}
           <div>
-            <div className="bg-blue-100 text-black font-bold p-2 rounded-md w-fit">
+            <div className="bg-[#084d71] text-white font-bold p-2 rounded-md w-fit">
               Global Statistics
             </div>
             <div className="bg-blue-100 text-black text-xs p-1 rounded-md w-fit mt-2">
@@ -97,7 +97,7 @@ const ManageProfile = () => {
         ].map((tab) => (
           <div
             key={tab}
-            className="bg-[#1c2d3a] text-white px-4 py-2 rounded cursor-pointer hover:bg-[#004054]"
+            className="bg-[#084d71] text-white px-4 py-2 rounded cursor-pointer hover:bg-[#004054]"
           >
             {tab}
           </div>
@@ -105,7 +105,7 @@ const ManageProfile = () => {
       </div>
 
       {/* Buyer’s Description */}
-      <div className="mt-4 p-4 bg-[#15232f] rounded-lg border border-gray-600">
+      <div className="mt-4 p-4 bg-[#084d71] text-white rounded-lg border border-gray-600">
         <h2 className="text-center font-bold">Buyer's Description</h2>
         <p className="text-center text-gray-400">
           This user does not have a description

@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
+import logo from '../imgs/updatedlogo.png';
 
 const Header = () => {
   return (
-    <header className="bg-gray-900 sticky text-white">
+    <header className="sticky text-white bg-white">
       <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
         <div className="flex-shrink-0 mb-4 sm:mb-0">
-          <Link to="/" className="text-2xl font-bold">
-            Mega Market
+          <Link to="/">
+            <img src={logo} alt="Mega Market" className="w-24" />
           </Link>
-          {/* <img src="/newLogo.png" alt="Mega Market" className="w-24 " /> */}
         </div>
-        <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 w-full sm:w-auto">
+        <div className="bg-[#084d71] flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 w-full sm:w-auto rounded">
           <Link to="/" className="flex items-center w-full sm:w-auto">
             <FaUserCircle className="w-10 h-10 text-gray-300 mr-2 flex-shrink-0" />
             <div className="text-sm">
@@ -39,8 +39,8 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <div className=" py-2">
-        <div className="container mx-auto px-4">
+      <div className="bg-[#084d71] py-2">
+        <div className="bg-[#084d71] container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm">
             <span className="flex items-center">
               <span className="text-green-400 mr-1">▲</span>USD 97,364.55
