@@ -62,9 +62,9 @@ const Header = () => {
           )}
         </div>
       </div>
-      <div className=" bg-[#4aa0ba] py-2">
+      <div className="bg-[#4aa0ba] py-2">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm">
+          <div className="hidden sm:flex flex-wrap justify-center gap-4 sm:gap-6 text-sm">
             <span className="flex items-center">
               <span className="text-green-400 mr-1">▲</span>USD 97,364.55
             </span>
