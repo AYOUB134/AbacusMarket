@@ -21,7 +21,7 @@ const Header = () => {
             <img src={logo} alt="Mega Market" className="w-24" />
           </Link>
         </div>
-        <div className="bg-[#084d71] flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 w-full sm:w-auto rounded p-2">
+        <div className=" bg-[#4aa0ba] flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 w-full sm:w-auto rounded p-2">
           {user ? (
             <div className="flex items-center w-full sm:w-auto">
               <FaUserCircle className="w-10 h-10 text-gray-300 mr-2 flex-shrink-0" />
@@ -62,7 +62,7 @@ const Header = () => {
           )}
         </div>
       </div>
-      <div className="bg-[#084d71] py-2">
+      <div className=" bg-[#4aa0ba] py-2">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm">
             <span className="flex items-center">

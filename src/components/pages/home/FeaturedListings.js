@@ -63,7 +63,7 @@ const FeaturedListings = () => {
             </div>
 
             {/* View Product Button */}
-            <Link to="#" className="mt-2 sm:mt-3 block text-white text-xs sm:text-sm font-bold py-2 text-center rounded transition-colors bg-[#084d71]">
+            <Link to="#" className="mt-2 sm:mt-3 block text-white text-xs sm:text-sm font-bold py-2 text-center rounded transition-colors  bg-[#4aa0ba]">
               View Product →
             </Link>
           </div>

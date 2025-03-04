@@ -18,7 +18,7 @@ const ManageWallet = () => {
   return (
     <div className="p-4 bg-[] min-h-screen text-white">
       {/* Header */}
-      <div className="bg-[#084d71] text-white font-bold flex items-center p-2 rounded-md">
+      <div className=" bg-[#4aa0ba] text-white font-bold flex items-center p-2 rounded-md">
         <FaWallet className="mr-2" />
         WALLET / BALANCE
       </div>
@@ -47,7 +47,7 @@ const ManageWallet = () => {
       </div>
 
       {/* Balance */}
-      <div className="bg-[#084d71] text-white p-4 mt-4 rounded-md">
+      <div className=" bg-[#4aa0ba] text-white p-4 mt-4 rounded-md">
         <div className="text-sm">
           <p className="font-bold">Current Balance</p>
           <p className="ml-2 text-yellow-400">USD {balance.toFixed(2)}</p>
@@ -55,10 +55,10 @@ const ManageWallet = () => {
       </div>
 
       {/* Transaction History */}
-      <div className="bg-[#084d71] text-white p-4 mt-4 rounded-md">
+      <div className=" bg-[#4aa0ba] text-white p-4 mt-4 rounded-md">
         <div className="text-sm font-bold mb-2">Transaction History</div>
         {transactions.length === 0 ? (
-          <div className="bg-[#084d71] text-white text-center font-bold mt-4 p-2 rounded-md">
+          <div className=" bg-[#4aa0ba] text-white text-center font-bold mt-4 p-2 rounded-md">
             NO TRANSACTIONS FOUND
           </div>
         ) : (

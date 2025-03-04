@@ -15,7 +15,7 @@ const VerifyUrl = () => {
     <div className="p-4  flex items-center justify-center">
       <div className="w-full max-w-md mx-auto">
         {/* Header */}
-        <div className="bg-[#084d71] text-white text-center py-3 text-xl font-bold rounded">
+        <div className=" bg-[#4aa0ba] text-white text-center py-3 text-xl font-bold rounded">
           Verify URL
         </div>
 
@@ -44,7 +44,7 @@ const VerifyUrl = () => {
         {/* Verify Button */}
         <div className="text-center mt-4">
           <button
-            className="bg-[#084d71] text-white px-4 py-2 rounded mt-2 w-full"
+            className=" bg-[#4aa0ba] text-white px-4 py-2 rounded mt-2 w-full"
             onClick={handleVerifyUrl}
           >
             Verify Url

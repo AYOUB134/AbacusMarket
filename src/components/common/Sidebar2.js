@@ -26,7 +26,7 @@ const Sidebar2 = ({ isOpen, toggleSidebar }) => {
       >
         {/* Profile Actions */}
         <div className="p-2 rounded-md">
-          <div className="flex items-center bg-[#084d71] text-white text-black font-bold p-2 rounded-md">
+          <div className="flex items-center  bg-[#4aa0ba] text-white text-black font-bold p-2 rounded-md">
             <FaUser className="mr-2" />
             PROFILE ACTIONS
           </div>

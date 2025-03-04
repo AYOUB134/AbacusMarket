@@ -15,7 +15,7 @@ const ManageOrders = () => {
   return (
     <div className="text-center  p-4 bg-white min-h-screen ">
       {/* Header */}
-      <div className=" text-center  bg-[#084d71] text-white font-bold flex items-center p-2 rounded-md">
+      <div className=" text-center   bg-[#4aa0ba] text-white font-bold flex items-center p-2 rounded-md">
         <FaClipboardList className="mr-2" />
         ORDERS
       </div>
@@ -41,7 +41,7 @@ const ManageOrders = () => {
         ].map((tab, index) => (
           <div
             key={index}
-            className="border border-blue-400 text-white px-3 py-1 rounded-md cursor-pointer bg-[#084d71] text-white"
+            className="border border-blue-400 text-white px-3 py-1 rounded-md cursor-pointer  bg-[#4aa0ba] text-white"
           >
             {tab}
           </div>
@@ -73,7 +73,7 @@ const ManageOrders = () => {
             <option value="Unpaid">Unpaid</option>
           </select>
           <button
-            className="bg-[#084d71] text-white px-3 py-1 rounded-md hover:bg-blue-800"
+            className=" bg-[#4aa0ba] text-white px-3 py-1 rounded-md hover:bg-blue-800"
             onClick={handleSearch}
           >
             Search
@@ -82,7 +82,7 @@ const ManageOrders = () => {
 
         {/* Display Orders */}
         {orders.length === 0 ? (
-          <div className="bg-[#084d71] text-white text-center font-bold mt-4 p-2 rounded-md">
+          <div className=" bg-[#4aa0ba] text-white text-center font-bold mt-4 p-2 rounded-md">
             NO ORDERS FOUND
           </div>
         ) : (

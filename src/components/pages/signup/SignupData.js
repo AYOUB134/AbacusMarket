@@ -67,7 +67,7 @@ const Signup = () => {
             <input type="password" id="password" className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" value={password} onChange={(e) => setPassword(e.target.value)} required />
           </div>
           <div className="flex items-center justify-between">
-            <button type="submit" className="bg-[#084d71] text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">Signup</button>
+            <button type="submit" className=" bg-[#4aa0ba] text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">Signup</button>
           </div>
         </form>
         <p className="text-center mt-4">

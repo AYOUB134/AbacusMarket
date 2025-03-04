@@ -35,12 +35,12 @@ const ManageSupport = () => {
   return (
     <div className=" min-h-screen p-4 text-white">
       {/* Header */}
-      <div className="bg-[#084d71] text-white text-center py-3 text-xl font-bold rounded">
+      <div className=" bg-[#4aa0ba] text-white text-center py-3 text-xl font-bold rounded">
         ⚙ ABACUS HELPDESK
       </div>
 
       {/* Most Popular Questions */}
-      <h2 className=" bg-[#084d71] text-white text-center text-lg font-bold mt-6 ">
+      <h2 className="  bg-[#4aa0ba] text-white text-center text-lg font-bold mt-6 ">
         MOST POPULAR QUESTIONS
       </h2>
       <div className="w-full max-w-2xl mx-auto mt-4">
@@ -87,8 +87,8 @@ const ManageSupport = () => {
         ].map((category, index) => (
           <button
             key={index}
-            className={`bg-[#084d71] text-white  px-4 py-2 rounded flex items-center text-white ${
-              category === "Other" ? "bg-[#084d71] text-white" : "bg-[#084d71] text-white"
+            className={` bg-[#4aa0ba] text-white  px-4 py-2 rounded flex items-center text-white ${
+              category === "Other" ? " bg-[#4aa0ba] text-white" : " bg-[#4aa0ba] text-white"
             }`}
           >
             {category === "Orders" && <span className="mr-2">🛒</span>}
@@ -113,7 +113,7 @@ const ManageSupport = () => {
       {/* Open Ticket */}
       <div className="text-center mt-6 border-t border-gray-500 pt-4">
         <p className="font-bold">STILL NEED HELP?</p>
-        <button className="bg-[#084d71] text-white px-4 py-2 rounded mt-2">
+        <button className=" bg-[#4aa0ba] text-white px-4 py-2 rounded mt-2">
           Open a ticket
         </button>
       </div>

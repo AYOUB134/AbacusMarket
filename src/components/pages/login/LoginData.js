@@ -59,7 +59,7 @@ const Login = () => {
             />
           </div>
           <div className="flex items-center justify-between">
-            <button type="submit" className="bg-[#084d71] text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+            <button type="submit" className=" bg-[#4aa0ba] text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
               Login
             </button>
           </div>

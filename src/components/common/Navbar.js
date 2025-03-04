@@ -26,7 +26,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
   return (
     <nav
-      className={'py-4 sticky top-0 bg-[#084d71] '}
+      className={'py-4 sticky top-0  bg-[#4aa0ba] '}
     >
       <div className="container mx-auto px-4 flex flex-wrap justify-between items-center">
         {/* Mobile Menu */}

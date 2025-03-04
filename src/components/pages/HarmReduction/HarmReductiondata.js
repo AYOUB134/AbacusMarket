@@ -4,7 +4,7 @@ const HarmReduction = () => {
   return (
     <div className=" min-h-screen p-4 ">
       {/* Header */}
-      <div className="bg-[#084d71] text-white text-center py-3 text-xl font-bold rounded">
+      <div className=" bg-[#4aa0ba] text-white text-center py-3 text-xl font-bold rounded">
         Harm Reduction
       </div>
 

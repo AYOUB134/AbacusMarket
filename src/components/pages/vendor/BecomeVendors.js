@@ -5,7 +5,7 @@ const BecomeVendor = () => {
   return (
     <div className=" min-h-screen p-4">
       {/* Header */}
-      <div className="bg-[#084d71] text-white text-center py-3 text-xl font-bold rounded">
+      <div className=" bg-[#4aa0ba] text-white text-center py-3 text-xl font-bold rounded">
         🌟 BECOME A VENDOR
       </div>
 
@@ -62,7 +62,7 @@ const BecomeVendor = () => {
 
       {/* Call to Action */}
       <div className="text-center mt-6">
-        <button className="bg-[#084d71] text-white px-4 py-2 rounded mt-2 flex items-center mx-auto">
+        <button className=" bg-[#4aa0ba] text-white px-4 py-2 rounded mt-2 flex items-center mx-auto">
           <FaStore className="mr-2" /> Start Selling Now
         </button>
       </div>

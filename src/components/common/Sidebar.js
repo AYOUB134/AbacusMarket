@@ -66,20 +66,20 @@ const Sidebar = ({ darkMode = false, toggleDarkMode = () => {} }) => {
           </div>
           <p className="text-xs text-gray-400">0.00000000</p>
           <div className="grid grid-cols-2 gap-2 mt-3">
-            <button className="bg-[#084d71] text-white p-2 rounded flex items-center justify-center text-xs">
+            <button className=" bg-[#4aa0ba] text-white p-2 rounded flex items-center justify-center text-xs">
               <FaShoppingCart className="mr-2" /> My Orders
             </button>
-            <button className="bg-[#084d71] text-white p-2 rounded flex items-center justify-center text-xs">
+            <button className=" bg-[#4aa0ba] text-white p-2 rounded flex items-center justify-center text-xs">
               <FaHeart className="mr-2" /> My Favorites
             </button>
-            <button className=" bg-[#084d71]  text-white p-2 rounded flex items-center justify-center text-xs">
+            <button className="  bg-[#4aa0ba]  text-white p-2 rounded flex items-center justify-center text-xs">
               <FaCog className="mr-2" /> My Settings
             </button>
-            <button className=" bg-[#084d71] text-white  p-2 rounded flex items-center justify-center text-xs">
+            <button className="  bg-[#4aa0ba] text-white  p-2 rounded flex items-center justify-center text-xs">
               <FaSignOutAlt className="mr-2" /> Log Out
             </button>
           </div>
-          <button className="bg-[#084d71] text-white w-full mt-3 py-2 rounded text-xs ">
+          <button className=" bg-[#4aa0ba] text-white w-full mt-3 py-2 rounded text-xs ">
             MY ABACUS
           </button>
         </div>
@@ -103,7 +103,7 @@ const Sidebar = ({ darkMode = false, toggleDarkMode = () => {} }) => {
         </div>
 
         {/* Browse Categories Section */}
-        <button className="bg-[#084d71] text-white w-full py-2 rounded mb-3 text-xs">
+        <button className=" bg-[#4aa0ba] text-white w-full py-2 rounded mb-3 text-xs">
           BROWSE CATEGORIES
         </button>
         <ul className="text-xs cursor-pointer space-y-2">
@@ -121,7 +121,7 @@ const Sidebar = ({ darkMode = false, toggleDarkMode = () => {} }) => {
         </ul>
 
         {/* Search Section */}
-        <div className=" bg-[#084d71] text-white mt-4 p-4 border border-gray-700 rounded-lg">
+        <div className="  bg-[#4aa0ba] text-white mt-4 p-4 border border-gray-700 rounded-lg">
           <input
             type="text"
             placeholder="Search Product"
@@ -135,7 +135,7 @@ const Sidebar = ({ darkMode = false, toggleDarkMode = () => {} }) => {
           <select className="w-full p-2 rounded bg-gray-800 border border-gray-600 mt-2 text-xs">
             <option>Most popular item</option>
           </select>
-          <button className="bg-[#084d71] text-white w-full mt-3 py-2 rounded text-xs">
+          <button className=" bg-[#4aa0ba] text-white w-full mt-3 py-2 rounded text-xs">
             Search
           </button>
         </div>
