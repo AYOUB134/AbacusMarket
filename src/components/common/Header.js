@@ -55,7 +55,7 @@ const Header = () => {
           ) : (
             <Link
               to="/login"
-              className="bg-green-500 hover:bg-green-600 text-black text-sm py-1 px-2 rounded w-full sm:w-auto text-center"
+              className="bg-[#4aa0ba] text-black text-sm py-1 px-2 rounded w-full sm:w-auto text-center"
             >
               Login
             </Link>
