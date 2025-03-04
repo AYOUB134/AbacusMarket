@@ -1,9 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Breadcrumb from "../../common/Breadcrumb";
-import LoginData from "./LoginData";
+import SignupData from "./SignupData";
 
-const Login = () => {
+const Signup = () => {
   const navigate = useNavigate();
 
   const handleLogoClick = () => {
@@ -28,14 +27,13 @@ const Login = () => {
       <div className="flex flex-grow items-center justify-center">
         <main className="flex-grow rounded-lg shadow-md w-full max-w-md">
           <div>
-            <LoginData />
+            <SignupData />
           </div>
         </main>
       </div>
 
-  
     </div>
   );
 };
 
-export default Login;
+export default Signup;

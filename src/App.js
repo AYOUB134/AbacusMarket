@@ -11,6 +11,7 @@ import Verify from "./components/pages/verifyurl/Verify";
 import HarmReduction from "./components/pages/HarmReduction/HarmReduction";
 import Notifications from "./components/pages/notifications/Notifications";
 import Login from "./components/pages/login/Login";
+import Signup from "./components/pages/signup/Signup";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/harm-reduction" element={<HarmReduction />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </Router>
     </div>
