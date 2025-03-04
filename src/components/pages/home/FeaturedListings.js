@@ -14,56 +14,56 @@ const FeaturedListings = () => {
       .catch((error) => console.error("Error fetching products:", error));
   }, []);
 
-  console.log(listings)
-
   return (
-    <div className="text-white flex-grow p-4 bg-white">
-      <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-[#084d71]" style={{ marginTop: "0" }}>
+    <div className="text-white flex-grow p-2 bg-white">
+      <h2 className="text-md sm:text-lg font-semibold mb-2 text-[#084d71]">
         ⭐ FEATURED LISTINGS
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 sm:gap-6">
-        {listings.map((listing, index) => (
-          <div key={listing._id} className="p-3 sm:p-4 rounded-lg border border-gray-600 shadow-md flex flex-col justify-between">
+      <div className="grid grid-cols-3 gap-0">
+        {listings.map((listing) => (
+          <div key={listing._id} className="p-1 sm:p-2 rounded-md border border-gray-300 shadow-sm flex flex-col justify-between">
             <div>
               {/* Product Image */}
-              <div className="relative w-full h-32 sm:h-40 mb-2 sm:mb-3 bg-white rounded overflow-hidden">
-                <img src={listing.images[0]} alt={listing.name} className="w-full h-full object-contain p-2 " loading="lazy" />
+              <div className="relative w-full h-20 sm:h-24 bg-white rounded overflow-hidden">
+                <img src={listing.images[0]} alt={listing.name} className="w-full h-full object-contain p-1" loading="lazy" />
               </div>
 
               {/* Product Title */}
-              <h3 className="text-xs sm:text-sm font-semibold text-black mb-1 line-clamp-2">
+              <h3 className="text-xs sm:text-sm font-medium text-black mb-1 line-clamp-2">
                 {listing.name}
               </h3>
 
               {/* Product Category */}
-              <p className="text-xs text-gray-300 font-semibold">Buds & Flowers</p>
+              <p className="text-[9px] sm:text-[10px] text-gray-500">
+                Buds & Flowers
+              </p>
 
               {/* Seller Info */}
-              <p className="text-xs text-gray-300 font-semibold mt-1">
+              <p className="text-[9px] sm:text-[10px] text-gray-500">
                 <span className="text-black">Sold by:</span> {listing.vendor.username}
               </p>
 
               {/* Feedback & Vendor Level */}
-              <div className="flex justify-between text-xs text-gray-300 my-2">
-                <span className="bg-green-600 px-2 py-1 rounded text-white font-semibold">
+              <div className="flex justify-between text-[9px] sm:text-[10px] text-gray-500 my-1">
+                <span className="bg-green-600 px-1 py-1 rounded text-white font-semibold">
                   FB {listing.feedbackPercentage}%
                 </span>
-                <span className="bg-blue-600 px-2 py-1 rounded text-white font-semibold">
+                <span className="bg-blue-600 px-1 py-1 rounded text-white font-semibold">
                   Lvl {listing.vendorLevel}
                 </span>
               </div>
 
               {/* Price & Shipping */}
-              <p className="text-xs sm:text-sm font-bold text-green-400 mt-1">
+              <p className="text-xs sm:text-sm font-bold text-green-500 mt-1">
                 USD {listing.price.toFixed(2)}
               </p>
-              <p className="text-xs text-gray-300">
+              <p className="text-[9px] sm:text-[10px] text-gray-500">
                 <span className="text-black font-semibold">Ships From:</span> {listing.shipsFrom}
               </p>
             </div>
 
             {/* View Product Button */}
-            <Link to="#" className="mt-2 sm:mt-3 block text-white text-xs sm:text-sm font-bold py-2 text-center rounded transition-colors  bg-[#4aa0ba]">
+            <Link to="#" className="mt-1 block text-white text-[10px] sm:text-xs font-bold py-1 text-center rounded bg-[#4aa0ba]">
               View Product →
             </Link>
           </div>

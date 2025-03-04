@@ -36,7 +36,7 @@ const ManageSupport = () => {
     <div className=" min-h-screen p-4 text-white">
       {/* Header */}
       <div className=" bg-[#4aa0ba] text-white text-center py-3 text-xl font-bold rounded">
-        ⚙ ABACUS HELPDESK
+        ⚙ MEGA HELPDESK
       </div>
 
       {/* Most Popular Questions */}

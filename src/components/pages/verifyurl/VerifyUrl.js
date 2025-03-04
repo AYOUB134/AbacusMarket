@@ -21,7 +21,7 @@ const VerifyUrl = () => {
 
         {/* Description */}
         <div className="  text-black text-sm p-2 mt-4 rounded-md">
-          This tool is to verify the legitimacy of any fixed link of Abacus
+          This tool is to verify the legitimacy of any fixed link of MEGA
           Market like the main public link or your private links. Temporal
           rotatory links cannot be verified here. Links provided by Rotator.to,
           Kangaroo Kicks Links or other authorized link distributors are always

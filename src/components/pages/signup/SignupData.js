@@ -15,7 +15,7 @@ const Signup = () => {
     const userData = { fullname, email, phoneNumber, role, username, password };
 
     try {
-      const response = await fetch("https://mega-market-server.vercel.app/api/user/signup", {
+      const response = await fetch("https://MEGA-market-server.vercel.app/api/user/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

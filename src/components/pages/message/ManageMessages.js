@@ -30,7 +30,7 @@ const ManageMessages = () => {
         capacity.
         <br />
         <br />
-        Never accept direct deals outside Abacus Market. You will likely end up
+        Never accept direct deals outside MEGA Market. You will likely end up
         losing your money. Report through ticket any vendor asking you to
         continue the transaction through wickr or any other type of external
         method. If a vendor who does not have FE rights ask you to FE before

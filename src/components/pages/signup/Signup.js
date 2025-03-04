@@ -17,7 +17,7 @@ const Signup = () => {
       {/* Header with Logo */}
       <div className="text-center py-4">
         <span
-          className="text-2xl font-bold  cursor-pointer"
+          className="text-2xl font-bold  cursor-pointer text-[#4aa0ba]"
           onClick={handleLogoClick}
         >
           MEGA MARKET

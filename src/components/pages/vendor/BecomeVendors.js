@@ -11,7 +11,7 @@ const BecomeVendor = () => {
 
       {/* Description */}
       <div className=" text-black text-sm p-2 mt-4 rounded-md">
-        Becoming a vendor on Abacus Market allows you to list your products and
+        Becoming a vendor on MEGA Market allows you to list your products and
         reach a wide audience. Follow the instructions below to set up your
         vendor account.
       </div>

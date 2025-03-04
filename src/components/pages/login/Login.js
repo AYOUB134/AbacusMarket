@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Breadcrumb from "../../common/Breadcrumb";
 import LoginData from "./LoginData";
 
 const Login = () => {
@@ -18,7 +17,7 @@ const Login = () => {
       {/* Header with Logo */}
       <div className="text-center py-4">
         <span
-          className="text-2xl font-bold  cursor-pointer"
+          className="text-2xl text-[#4aa0ba] font-bold  cursor-pointer"
           onClick={handleLogoClick}
         >
           MEGA MARKET

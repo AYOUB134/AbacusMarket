@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
-import logo from '../imgs/updatedlogo.png';
+import logo from '../imgs/logo.jpg';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -14,14 +14,14 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky text-white bg-white">
+    <header className="sticky text-black bg-white">
       <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
         <div className="flex-shrink-0 mb-4 sm:mb-0">
           <Link to="/">
-            <img src={logo} alt="Mega Market" className="w-24" />
+            <img src={logo} alt="MEGA Market" className="w-24" />
           </Link>
         </div>
-        <div className=" bg-[#4aa0ba] flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 w-full sm:w-auto rounded p-2">
+        <div className=" flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 w-full sm:w-auto rounded p-2">
           {user ? (
             <div className="flex items-center w-full sm:w-auto">
               <FaUserCircle className="w-10 h-10 text-gray-300 mr-2 flex-shrink-0" />
@@ -29,7 +29,7 @@ const Header = () => {
                 <p>
                   Logged in as <span className="font-semibold">{user.data.username}</span>
                 </p>
-                <p className="flex flex-wrap gap-2">
+                {/* <p className="flex flex-wrap gap-2">
                   BTC:{" "}
                   <Link to="/balance" className="hover:underline">
                     0.00000000
@@ -38,7 +38,7 @@ const Header = () => {
                   <Link to="/balance?crypto=xmr" className="hover:underline">
                     0.00000000
                   </Link>
-                </p>
+                </p> */}
               </div>
             </div>
           ) : (
@@ -48,14 +48,14 @@ const Header = () => {
           {user ? (
             <button
               onClick={handleLogout}
-              className="bg-red-500 hover:bg-red-600 text-white text-sm py-1 px-2 rounded w-full sm:w-auto text-center"
+              className="bg-[#4aa0ba] hover:bg-red-600 text-black text-sm py-1 px-2 rounded w-full sm:w-auto text-center"
             >
               Logout
             </button>
           ) : (
             <Link
               to="/login"
-              className="bg-green-500 hover:bg-green-600 text-white text-sm py-1 px-2 rounded w-full sm:w-auto text-center"
+              className="bg-green-500 hover:bg-green-600 text-black text-sm py-1 px-2 rounded w-full sm:w-auto text-center"
             >
               Login
             </Link>
